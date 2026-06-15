@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1B2D5E">
+<meta name="description" content="Платформа Технолидерства — экосистема подготовки технологических лидеров. Готовим запуск: эфиры с экспертами, курсы и наставники под ваш технологический путь.">
+<title>Платформа Технолидерства — скоро запуск</title>
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Платформа Технолидерства — скоро запуск">
+<meta property="og:description" content="Экосистема подготовки технологических лидеров. Готовим запуск.">
+<meta property="og:url" content="https://технолидерство.рф/">
+
+<style>
+:root {
+  --garnet: #1B2D5E;
+  --garnet-light: #2D4A8A;
+  --garnet-dark: #162450;
+  --violet: #7B68EE;
+  --violet-50: #F2F3FF;
+  --violet-100: #E5E7FF;
+  --violet-200: #C5CAFF;
+  --sky: #4FABF5;
+  --off-white: #F5F7FC;
+  --surface: #FFFFFF;
+  --text-primary: #0E1A33;
+  --text-secondary: #3A4F7A;
+  --text-muted: #6B7FA8;
+  --neutral-100: #EEF2F9;
+  --neutral-200: #D8E2F5;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-full: 100px;
+  --shadow-md: 0 4px 20px rgba(27,45,94,0.08), 0 2px 6px rgba(27,45,94,0.04);
+  --shadow-lg: 0 12px 40px rgba(27,45,94,0.10), 0 4px 12px rgba(27,45,94,0.06);
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background: linear-gradient(180deg, #F5F7FC 0%, #E8EEF9 100%);
+  color: var(--text-primary);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+img { max-width: 100%; display: block; }
+
+.container { max-width: 720px; margin: 0 auto; padding: 0 24px; width: 100%; }
+
+header.site-header { padding: 28px 0; }
+header .container { display: flex; align-items: center; }
+.brand { display: inline-flex; align-items: center; gap: 12px; color: var(--garnet); font-weight: 800; font-size: 18px; letter-spacing: -0.2px; text-decoration: none; }
+.brand-mark { width: 34px; height: 34px; flex-shrink: 0; }
+
+main.hero {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 40px 0 64px;
+}
+
+.badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 12px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase;
+  padding: 7px 14px; border-radius: var(--radius-full);
+  background: var(--violet-50); color: var(--violet);
+  margin-bottom: 24px;
+}
+.badge-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--violet); box-shadow: 0 0 0 4px rgba(123,104,238,0.15); }
+
+h1.hero-title {
+  font-size: clamp(30px, 5.4vw, 46px);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+  color: var(--garnet-dark);
+}
+
+p.hero-lead {
+  font-size: clamp(17px, 2.2vw, 19px);
+  line-height: 1.55;
+  color: var(--text-secondary);
+  margin-bottom: 36px;
+  max-width: 580px;
+}
+
+.cta-block {
+  background: var(--surface);
+  border: 1px solid var(--neutral-200);
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: var(--shadow-md);
+}
+.cta-title { font-size: 21px; font-weight: 800; margin-bottom: 6px; letter-spacing: -0.3px; color: var(--text-primary); }
+.cta-sub { font-size: 15px; color: var(--text-muted); }
+
+.form-placeholder {
+  padding: 28px 24px;
+  border-radius: 12px;
+  background: var(--violet-50);
+  border: 1px dashed var(--violet-200);
+  text-align: center;
+  margin-top: 22px;
+}
+.form-placeholder__title { font-size: 19px; font-weight: 700; margin-bottom: 8px; color: var(--text-primary); }
+.form-placeholder__text { font-size: 15px; color: var(--text-secondary); line-height: 1.6; }
+
+footer.site-footer {
+  border-top: 1px solid var(--neutral-200);
+  background: var(--surface);
+  padding: 28px 0;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+.footer-bottom { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; align-items: center; }
+.footer-age { font-weight: 700; font-size: 11px; color: var(--text-muted); }
+
+@media (max-width: 520px) {
+  .cta-block { padding: 24px 20px; border-radius: 16px; }
+  .cta-title { font-size: 19px; }
+  header.site-header { padding: 20px 0; }
+  main.hero { padding: 24px 0 48px; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand">
+      <svg class="brand-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="40" height="40" rx="10" fill="#1B2D5E"/>
+        <path d="M20 9l9 5.2v10.4L20 30l-9-5.4V14.2L20 9z" stroke="#7B68EE" stroke-width="2" fill="none"/>
+        <circle cx="20" cy="19.5" r="3.4" fill="#4FABF5"/>
+      </svg>
+      Платформа&nbsp;Технолидерства
+    </a>
+  </div>
+</header>
+
+<main class="hero">
+  <div class="container">
+    <span class="badge"><span class="badge-dot"></span>Скоро запуск</span>
+    <h1 class="hero-title">Платформа Технолидерства<br>скоро откроется</h1>
+    <p class="hero-lead">
+      Экосистема подготовки технологических лидеров. Сейчас мы готовим запуск:
+      эфиры с экспертами, курсы и наставников под ваш технологический путь.
+    </p>
+
+    <div class="cta-block">
+      <h2 class="cta-title">Мы почти готовы</h2>
+      <p class="cta-sub">Платформа открывается в ближайшее время. Следите за анонсами.</p>
+
+      <div class="form-placeholder" role="status" aria-live="polite">
+        <h3 class="form-placeholder__title">Скоро будет доступно</h3>
+        <p class="form-placeholder__text">Регистрация откроется вместе с запуском платформы.</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <span>© 2026 Платформа Технолидерства</span>
+      <span class="footer-age" aria-label="Возрастная маркировка">6+</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
